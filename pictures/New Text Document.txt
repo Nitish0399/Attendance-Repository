@@ -1,0 +1,52 @@
+ if(jComboBox3.getItemAt(jComboBox3.getSelectedIndex()).equals("SEC 1"))
+                    {
+                        int j=1;
+                          PreparedStatement stmt=conn.prepareStatement("select sum(AR001)/COUNT(*)*100,sum(AR002)/COUNT(*)*100,sum(AR003)/COUNT(*)*100,sum(AR004)/COUNT(*)*100,sum(AR005)/COUNT(*)*100,sum(AR006)/COUNT(*)*100,sum(AR007)/COUNT(*)*100,sum(AR008)/COUNT(*)*100,sum(AR009)/COUNT(*)*100,sum(AR010)/COUNT(*)*100, from sec1 ");
+                          ResultSet rs=stmt.executeQuery();
+                          for(int i=0;i<10;i++){
+                             result[i]=rs.getDouble(j);
+                              j++;
+                          }
+                          for(int i=0;i<10;i++)
+                          {
+                           if(result[i]>=per)
+                              {
+                                model.addRow(new Object[] {"AR001",result[0],1});
+                              }
+                           else if(result[i]>=per)
+                              {
+                                model.addRow(new Object[] {"AR002",result[1],1});
+                              }
+                          }
+                                      
+                    }
+            else  if(jComboBox3.getItemAt(jComboBox3.getSelectedIndex()).equals("SEC 2"))
+            {
+                
+            }
+            else  if(jComboBox3.getItemAt(jComboBox3.getSelectedIndex()).equals("SEC 3"))
+            {
+                
+            }
+            else
+            {
+                
+            }
+            
+        }
+        else if(jComboBox1.getItemAt(jComboBox1.getSelectedIndex()).equals(">"))
+        {
+            
+        }
+        else if(jComboBox1.getItemAt(jComboBox1.getSelectedIndex()).equals("<="))
+        {
+            
+        }
+        else if(jComboBox1.getItemAt(jComboBox1.getSelectedIndex()).equals("<"))
+        {
+            
+        }
+        else
+        {
+            
+        }
