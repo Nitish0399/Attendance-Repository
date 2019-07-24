@@ -1,4 +1,4 @@
 # Attendance Repository Desktop Application
 
-This project provide teachers a way to store attendance of students of an academic organisation with ease. The front-end of the project is an interface for teachers which enables them to mark attendance of students for their every lecture hour which is a GUI created using Java Swing toolkit. In the back-end, the information given by user is stored into the database (used MySQL). The user can retrieve any kind of information from the data stored and utilise it as per requirement which is accomplished by java database connectivity API. 
-
+This project provide teachers a way to store attendance of students of an academic organisation with ease. It is a platform, a GUI desktop application for teachers which enables them to mark attendance of students for their every class hours. The information given by user gets stored into the database and the user can retrieve customized information from the it as per utility. 
+GUI built using Java Swing, MySQL for database, and JDBC API for integration.
